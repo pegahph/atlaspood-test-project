@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./pages/App.tsx";
-
+import Product from "./pages/product";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Product />,
   },
 ]);
 
