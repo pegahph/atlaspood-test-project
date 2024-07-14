@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# AtlasPood Test Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a test application demonstrating login functionality and product page access.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repository:
+```bash
+git clone https://github.com/pegahph/atlaspood-test-project.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project folder:
+```bash
+cd atlaspood-test-project
+```
+
+3. Install dependencies:
+  ```bash
+  npm install
+  ```
+
+## Running the Project
+
+1. Start the development server:
+```bash
+npm run dev
+```
+
+2. Open your browser and navigate to:
+[http://localhost:5173/](http://localhost:5173/)
+
+
+## Login Credentials
+
+Use the following credentials to log in:
+
+- Email: admin@email.com
+- Password: 1234
+
+## Important Notes
+
+- The product page is only accessible after logging in with the provided credentials.
+- User authentication state is not persisted in local storage, as this is a test project.
+- You will be logged out if you refresh the page or manually change the URL.
+- You'll need to log in again after any page refresh or URL change.
+
+## Development Status
+This project is a test application and may not include all features of a production-ready system. It's designed to demonstrate specific functionalities as requested in the test requirements.
